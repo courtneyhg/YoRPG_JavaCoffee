@@ -1,4 +1,4 @@
-public class Protagonist{
+public class Protagonist extends Character{
 	public String name;
 	public boolean status;
 	public int health;

@@ -1,4 +1,4 @@
-public class Monster{
+public class Monster extends Character{
 	public boolean status;
 	public int health;
 	public int damage;
