@@ -2,7 +2,7 @@
   class Protagonist -- protagonist of Ye Olde RPG
   **/
 
-public class Protagonist {
+public class Protagonist extends Character {
 
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     private String _name = "J. Doe";
@@ -74,15 +74,7 @@ public class Protagonist {
     }//end attack
 
 
-    /**
-      void lowerHP(int) -- lowers life by input value
-      pre:  Input >= 0
-      post: Life instance var is lowered by input ammount.
-      **/
-    public void lowerHP( int damageInflicted ) {
-        _hitPts = _hitPts - damageInflicted;
-    }
-
+ 
 
     //prepare a Protagonist for a special attack
     public void specialize() {

@@ -14,10 +14,10 @@ public class Joe extends Protagonist {
         post: initializes instance vars.
         **/
       public Joe() {
-        _hitPts = 140;
-        _strength = 110;
-        _defense = 50;
-        _attack = .5;
+        _hitPts = 125;
+        _strength = 100;
+        _defense = 40;
+        _attack = .4;
       }
 
 
@@ -90,5 +90,9 @@ public class Joe extends Protagonist {
           _attack = .4;
           _defense = 40;
       }
+      
+      public static void about(){
+      	  return "Your perfectly average Joe with balanced stats."
+      	  }
 
   }//end class Protagonist

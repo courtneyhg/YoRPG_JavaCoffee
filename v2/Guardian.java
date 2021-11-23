@@ -90,5 +90,9 @@ public class Guardian extends Protagonist {
           _attack = .4;
           _defense = 40;
       }
+      
+      public static String about(){
+        return "This hero has a holy armor and shield to decrease incoming damage. However, he isn't exactly the heaviest hitter.";
+        }
 
   }//end class Protagonist

@@ -3,7 +3,7 @@
   the adventurer's natural enemy in Ye Olde RPG
 **/
 
-public class Monster extends Character{
+public class Goblin extends Monster{
 
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
   private int _hitPts;
@@ -19,10 +19,10 @@ public class Monster extends Character{
      post: initializes instance vars.
   **/
   public Monster() {
-    _hitPts = 150;
+    _hitPts = 200;
     _strength = 20 + (int)( Math.random() * 45 ); // [20,65)
     _defense = 20;
-    _attack = 1;
+    _attack = 3;
   }
 
 
@@ -59,10 +59,18 @@ public class Monster extends Character{
 
     return damage;
   }//end attack
-  
-   public int lowerHP(int r) {
-    _hitPts = _hitPts;
-    return _hitPts;
+
+
+  /**
+     void lowerHP(int) -- lowers life by input value
+     pre:  Input >= 0
+     post: Life instance var is lowered by input ammount.
+  **/
+  public void lowerHP( int damageInflicted ) {
+    _hitPts = _hitPts - damageInflicted;
   }
 
-}//end class Monster
+  public static String about(){
+    return "This mischievous animal has an increased attack rating.";
+    }
+}//end class Goblin

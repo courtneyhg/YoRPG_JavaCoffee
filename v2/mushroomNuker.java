@@ -79,16 +79,9 @@ public class mushroomNuker extends Protagonist {
       }
 
 
-      //prepare a Protagonist for a special attack
-      public void specialize() {
-          _attack = .75;
-          _defense = 20;
-      }
-
-      //revert to normal mode
-      public void normalize() {
-          _attack = .4;
-          _defense = 40;
-      }
+ 
+      public static String about(){
+        return "This hero ate a radioactive mushroom that increases attack drastically at the cost of health and defense.";
+        }
 
   }//end class Protagonist
