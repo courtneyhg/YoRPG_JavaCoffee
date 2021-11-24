@@ -62,6 +62,7 @@ public class YoRPG {
   public void newGame() {
     String s;
     String name = "";
+    int choice;
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
 
     s += "\nChoose your difficulty: \n";
@@ -84,8 +85,28 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
-    //instantiate the player's character
-    pat = new Protagonist( name );
+    s = "What character would you like to be?";
+    s += "\t1: Joe\n";
+    s += "\t2: MushroomNuker\n";
+    s += "\t3: Guardian\n";
+
+    System.out.print(s);
+
+    try {
+      choice = Integer.parseInt(in.readLine());
+      if (choice == 1){
+        pat = new Joe(name);
+      }
+      if (choice == 2){
+        pat = new mushroomNuker(name);
+      }
+      if (choice == 3){
+        pat = new Guardian(name);
+      }
+    }
+    catch (IOException e) {}
+
+
 
   }//end newGame()
 
