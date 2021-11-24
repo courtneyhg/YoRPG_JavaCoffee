@@ -5,12 +5,6 @@
 
 public class Monster extends Character{
 
-  // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
-  private int _hitPts;
-  private int _strength;
-  private int _defense;
-  private double _attack;
-  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
   /**
@@ -25,9 +19,9 @@ public class Monster extends Character{
     _attack = 1;
   }
 
-
-  public int getDefense() { return _defense; }
-  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  public int getDefense(){
+    return _defense;
+  }
 
 
 

@@ -20,12 +20,9 @@ public class Ghost extends Monster{
     _attack = 2;
   }
 
-  public Ghost(String name){
-    this();
-    _name = name;
-    
+  public static String about(){
+    return "Increased health, attack and defense at the cost of strength.";
   }
-
 
 
 

@@ -85,7 +85,7 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
-    s = "What character would you like to be?";
+    s = "What character would you like to be?\n";
     s += "\t1: Joe\n";
     s += "\t2: MushroomNuker\n";
     s += "\t3: Guardian\n";

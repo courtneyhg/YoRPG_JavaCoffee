@@ -10,7 +10,6 @@ public class Protagonist extends Character {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     public Protagonist(){
-         _hitPts = 100;
     }
 
 
