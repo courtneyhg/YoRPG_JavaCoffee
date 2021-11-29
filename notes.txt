@@ -1,0 +1,12 @@
+ Team JavaCoffee: Courtnery Huang, Jason Yang, Yuki Feng
+ APCS
+ L01: An Adventurer is You!
+ 2021-11-24
+ time spent- 1 hour
+ DISCO- 
+ QCC- Will we be building on this in the future?
+ 
+ -Having a superclass can reduce redundant code
+ -A subclass of a subclass of a superclass will inherit the superclass's stuff.
+ 
+ 
